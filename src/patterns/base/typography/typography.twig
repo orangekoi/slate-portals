@@ -1,0 +1,133 @@
+<div class="storybook-section">
+    <h2 class="storybook-section-header">Font Families</h2>
+    <div class="type-list">
+        <div class="type-item">
+            <h3 class="type-header">--clocktower-serif</h3>
+            <span style="font-family: var(--clocktower-serif)">Palatino</span>
+        </div>
+        <div class="type-item">
+            <h3 class="type-header">--clocktower-sans-serif</h3>
+            <span style="font-family: var(--clocktower-sans-serif)">FreightSans Pro</span>
+        </div>
+    </div>
+</div>
+<div class="storybook-section">
+
+    <h2 class="storybook-section-header">Typography Sizes</h2>
+    <div class="type-list">
+        {% for typesize in typesizes %}
+        <div class="type-item">
+            <h3 class="type-header">{{typesize.var}}</h3>
+            <span style="font-size: var({{typesize.var}}">Go Big Red!</span>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+<div class="storybook-section">
+    <h2 class="storybook-section-header">Font Weight</h2>
+    <div class="type-list">
+        <div class="type-item">
+            <h3 class="type-header">--light-weight</h3>
+            <span style="flex: 0 1 200px; margin-top: 1rem; font-weight: var(--light-weight); font-size: var(--step-1); font-family: var(--clocktower-sans-serif); "><span class="storybook-tag">Sans-Serif</span><br> Light Weight</span>
+        </div>
+        <div class="type-item">
+            <h3 class="type-header">--regular-weight</h3>
+            <span style="flex: 0 1 200px; margin-top: 1rem; font-weight: var(--regular-weight); font-size: var(--step-1);"><span class="storybook-tag">Serif</span><br> Regular Weight</span>
+            <span style="flex: 0 1 200px; margin-top: 1rem; font-weight: var(--regular-weight); font-size: var(--step-1); font-family: var(--clocktower-sans-serif); ;"><span class="storybook-tag">Sans-Serif</span><br> Regular Weight </span>
+            
+        </div>
+        <div class="type-item">
+            <h3 class="type-header">--bold-weight</h3>
+            <span style="flex: 0 1 200px; margin-top: 1rem; font-weight: var(--bold-weight); font-size: var(--step-1);"><span class="storybook-tag">Serif</span><br> Bold Weight</span>
+            <span style="flex: 0 1 200px; margin-top: 1rem; font-weight: var(--bold-weight); font-size: var(--step-1); font-family: var(--clocktower-sans-serif); "><span class="storybook-tag">Sans-Serif</span><br> Bold Weight</span>
+        </div>
+    </div>
+</div>
+<div class="storybook-section">
+    <h2 class="storybook-section-header">Line Height</h2>
+    <div class="type-list">
+        <div class="type-item">
+            <h3 class="type-header">--leading-body</h3>
+            <p style="line-height: 1.5"><span class="storybook-tag">1.5</span><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dictum sed odio vel facilisis. Quisque vitae mauris eget elit finibus scelerisque. Sed dapibus commodo finibus. Pellentesque vel orci sit amet libero viverra dapibus in et dolor. Ut at vehicula ex, sed tincidunt nulla. </p>
+        </div>
+    </div>
+</div>
+<div class="storybook-section">
+    <h2 class="storybook-section-header">Glyphicons</h2>
+    <div class="type-list">
+        <div class="type-item">
+            <h3 class="type-header">--fa-solid</h3>
+            <span><i style="font-size: var(--step-3)" class="fa-solid fa-flux-capacitor"></i></span>
+        </div>
+        <div class="type-item">
+            <h3 class="type-header">--fa-regular</h3>
+            <span><i style="font-size: var(--step-3)" class="fa-regular fa-flux-capacitor"></i></span>
+        </div>
+        <div class="type-item">
+            <h3 class="type-header">--fa-light</h3>
+            <span><i style="font-size: var(--step-3)" class="fa-light fa-flux-capacitor"></i></span>
+        </div>
+        <div class="type-item">
+            <h3 class="type-header">--fa-duotone</h3>
+            <span><i style="font-size: var(--step-3)" class="fa-duotone fa-flux-capacitor"></i></span>
+        </div>
+    </div>
+</div>
+<div class="storybook-section">
+     <h2 class="storybook-section-header">Header Levels</h2>
+
+    <h1>Heading 1</h2>
+
+    <hr>
+    
+    <h2>Heading 2 (h2)</h2>
+    <h2 class="h1">Heading 2 (h2 classed to h1)</h2>
+    <h2 class="h3">Heading 2 (h2 classed to h3)</h2>
+    
+    <hr>
+    
+    <h3>Heading 3 (h3)</h3>
+    <h3 class="h2">Heading 3 (h3 classed to h2)</h3>
+    <h3 class="h4">Heading 4 (h3 classed to h4)</h3>
+    
+    <hr>
+    
+    <h4>Heading 4 (h4)</h4>
+    <h4 class="h3">Heading 3 (h4 classed to h3)</h4>
+    <h4 class="h5">Heading 4 (h4 classed to h5)</h4>
+    
+    <hr>
+    
+    <h5>Heading 5 (h5)</h5>
+    <h5 class="h4">Heading 3 (h5 classed to h4)</h5>
+    <h5 class="h6">Heading 4 (h5 classed to h6)</h5>
+    
+    <hr>
+    
+    <h6>Heading 6 (h6)</h6>
+    <h6 class="h5">Heading 5 (h6 classed to h5)</h6>
+</div>
+
+<div class="storybook-section">
+    <h1>Lorem Ipsum (H1)</h1>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a orci porta, rhoncus nisi nec, scelerisque dolor. Suspendisse potenti. Donec at lobortis velit. Suspendisse sapien ante, molestie sit amet mauris ut, mattis sagittis risus. Nunc quis tortor non felis elementum rhoncus. Maecenas ut posuere lacus. Mauris hendrerit vitae neque nec fringilla. Aliquam risus ipsum, efficitur interdum quam eu, rhoncus egestas erat. Donec in lectus elit. Duis blandit, ligula eu viverra tincidunt, ligula justo volutpat leo, at suscipit purus odio id felis. Proin feugiat vulputate libero, sed sagittis sem tristique ut. Donec in nunc volutpat, varius odio sit amet, venenatis sapien. Nam consequat nulla massa, sit amet facilisis lacus egestas quis. Morbi iaculis ac leo a vestibulum. Mauris viverra ipsum et tincidunt feugiat. Sed rhoncus dolor non scelerisque pretium.</p>
+<h2>Lorem Ipsum (H2) 44px</h2>
+<p>Duis nec sodales tortor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nullam urna sapien, congue id lectus eu, pharetra interdum tellus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer finibus mi id molestie fermentum. Pellentesque elementum venenatis molestie. Ut porta arcu at leo pharetra semper.</p>
+<h2>Lorem Ipsum (H2) 44px</h2>
+<h3>Lorem Ipsum (H3)</h3>
+<p>Etiam iaculis dapibus erat. Curabitur odio lorem, scelerisque sed ultrices eu, euismod quis magna. Mauris sit amet egestas urna. Integer lectus eros, vehicula eu est bibendum, imperdiet consectetur justo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi hendrerit erat a enim hendrerit, eu tempus arcu sagittis. Integer commodo lacus ac aliquam fringilla. Mauris sit amet velit quis neque aliquam porttitor. Nulla eleifend, risus iaculis aliquam pretium, orci magna tempor justo, a cursus ligula lacus eget odio. Duis at elementum diam, et hendrerit turpis. Sed tempor urna ac turpis pulvinar, nec fermentum purus ornare. Praesent pretium convallis diam, vel euismod sapien dapibus non. Morbi viverra auctor quam vitae iaculis.</p>
+<h3>Lorem Ipsum (H3)</h3>
+<h4>Lorem Ipsum (H4)</h4>
+<p>Nulla facilisi. Nam feugiat neque quis turpis eleifend tempor. Donec congue libero eget diam pharetra, lobortis luctus urna dignissim. Vestibulum luctus mi aliquam sollicitudin pharetra. Mauris faucibus interdum tincidunt. Sed posuere sem eu neque scelerisque gravida. Sed iaculis placerat lacus ac maximus. Integer at orci sollicitudin, laoreet est vitae, dignissim purus. Donec condimentum aliquet ex, vitae pharetra mi consequat et.</p>
+<h4>Lorem Ipsum (H4)</h4>
+<p>Cras auctor mauris in ultrices mollis. Curabitur ac ipsum in ex maximus placerat. Integer vel nulla at neque congue consectetur. Etiam a congue odio. Praesent eu est euismod, vulputate quam vitae, facilisis purus. Nulla euismod lorem non finibus tempus. Aenean vehicula libero in nulla sollicitudin ornare. Sed fringilla ipsum eu gravida blandit. Curabitur elit dui, vehicula hendrerit elit et, luctus pretium leo.</p>
+<h2>Lorem Ipsum (H2)</h2>
+<h3>Lorem Ipsum (H3)</h3>
+<p>Etiam iaculis dapibus erat. Curabitur odio lorem, scelerisque sed ultrices eu, euismod quis magna. Mauris sit amet egestas urna. Integer lectus eros, vehicula eu est bibendum, imperdiet consectetur justo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi hendrerit erat a enim hendrerit, eu tempus arcu sagittis. Integer commodo lacus ac aliquam fringilla. Mauris sit amet velit quis neque aliquam porttitor. Nulla eleifend, risus iaculis aliquam pretium, orci magna tempor justo, a cursus ligula lacus eget odio. Duis at elementum diam, et hendrerit turpis. Sed tempor urna ac turpis pulvinar, nec fermentum purus ornare. Praesent pretium convallis diam, vel euismod sapien dapibus non. Morbi viverra auctor quam vitae iaculis.</p>
+<h4>Lorem Ipsum (H4)</h4>
+<p>Cras auctor mauris in ultrices mollis. Curabitur ac ipsum in ex maximus placerat. Integer vel nulla at neque congue consectetur. </p>
+<h5>Lorem Ipsum (H5)</h5>
+<h6>Lorem Ipsum (H6)</h6>
+<p>Etiam a congue odio. Praesent eu est euismod, vulputate quam vitae, facilisis purus. Nulla euismod lorem non finibus tempus. Aenean vehicula libero in nulla sollicitudin ornare. Sed fringilla ipsum eu gravida blandit. Curabitur elit dui, vehicula hendrerit elit et, luctus pretium leo.</p>
+
+</div>

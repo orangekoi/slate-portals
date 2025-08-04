@@ -1,0 +1,37 @@
+
+.line-bottom {
+    position: relative;
+    margin-bottom: var(--space-16);
+    padding-bottom: var(--space-48);
+    margin-top: var(--space-zero);
+    
+    &::after {
+        content: "";
+        border-bottom: 3px solid hsl(var(--carnelian-dm, var(--carnelian)));
+        display: block;
+        height: 0.25em;
+        position: absolute;
+        margin: 0.5em auto;
+        width: 3em;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    &--left {
+        text-align: left;
+
+        &::after {
+            left: 0;
+            transform: unset;
+        }
+    }
+}
+
+.sans-serif {
+    font-family: var(--clocktower-sans-serif);
+    font-weight: var(--semi-bold-weight);
+}
+
+.center-align {
+    text-align: center;
+}

@@ -1,0 +1,21 @@
+{{ attach_library('clocktower/hero') }}
+
+<div class="hero hero--{{ heroType }}">
+
+  <h1>{{ nodeTitle }}</h1>
+  {{ breadcrumb }} 
+  {% if heroType == 'banner_image' and media is not null %}
+  <div class="hero-image-wrap">
+    <div class="hero-image">
+      <div class="cover-image">
+      
+        {{ media }}
+      </div>
+    </div>
+  </div>
+  {% endif %}
+  {% if showSectionNav == 1 %} 
+  
+    {{ sectionNav }}
+  {% endif %}
+</div>

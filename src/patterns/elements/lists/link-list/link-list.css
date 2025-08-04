@@ -1,0 +1,10 @@
+.link-list {
+
+    padding-left: var(--space-0);
+    list-style: none;
+
+    &--two-col {
+        columns: 2;
+        column-gap: var(--space-32);
+    }
+}

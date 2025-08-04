@@ -1,0 +1,36 @@
+.layout__grid {
+    display: grid;
+    
+    &--twocol {
+       
+        gap: var(--space-32);
+        grid-template-columns: 1fr;
+
+        @media (--for-desktop-up) {
+            grid-template-columns: repeat(2, calc(50% - calc(var(--space-32) / 2)));
+
+        }
+    
+    }
+    &--threecol {
+        
+        gap: var(--space-32);
+        grid-template-columns: 1fr;
+        @media (--for-desktop-up) {
+            grid-template-columns: repeat(3, calc(33.3% - calc(var(--space-32) / 3)));
+
+        }
+    }
+
+    &.center-offset {
+
+        padding-top: var(--space-64);
+        .card:nth-child(3n+1),
+        .card:nth-child(3n+3) {
+            /* transform: translateY(var(--space-96)); */
+            margin-top: calc(-1 * var(--space-64));
+        }
+            
+
+    }
+}

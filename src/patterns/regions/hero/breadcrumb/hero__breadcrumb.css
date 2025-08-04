@@ -1,0 +1,118 @@
+.hero {
+    h1 {
+        font-size: var(--step-4);
+        margin: var(--space-0) auto var(--space-16);
+        position: relative;
+        align-self: center;
+        padding-bottom: 0;
+        padding-top: 0;
+        /* max-width: 50%; */
+        text-align: center;
+        
+        @media (--for-tablet-portrait-up) {
+            font-size: var(--step-6);
+
+        }
+    }
+}
+
+.hero--banner_image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding-bottom: var(--space-64);
+
+    .hero-image-wrap {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        margin-top: var(--space-32);
+
+        .hero-image {
+            width: 60%;
+
+            .cover-image {
+                aspect-ratio: 16/9;
+                overflow: hidden;
+                margin: 0 auto;
+    
+                img {
+                    object-fit: cover;
+                    width: 100%;
+                    height: 100%;
+        
+                    @media (--for-tablet-portrait-up) {
+                        height: auto;
+                    }
+
+                    @media (--for-desktop-up) {
+                        min-width: 100%;
+                        height: 100%;
+        
+                    }
+        
+                    @media (--for-large-desktop-up) {
+                        width: 100%;
+                        height: auto;
+                    }
+        
+                }
+            }
+        }
+    }
+        
+}
+
+.hero--breadcrumbs_only {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero--banner_image-section-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding-bottom: var(--space-64);
+
+    .hero-image-wrap {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        margin-top: var(--space-32);
+
+        .hero-image {
+            width: 60%;
+
+            .cover-image {
+                aspect-ratio: 16/9;
+                overflow: hidden;
+                margin: 0 auto;
+    
+                img {
+                    object-fit: cover;
+                    width: 100%;
+                    height: 100%;
+        
+                    @media (--for-tablet-portrait-up) {
+                        height: auto;
+                    }
+
+                    @media (--for-desktop-up) {
+                        min-width: 100%;
+                        height: 100%;
+        
+                    }
+        
+                    @media (--for-large-desktop-up) {
+                        width: 100%;
+                        height: auto;
+                    }
+        
+                }
+            }
+        }
+    }
+}

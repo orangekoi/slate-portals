@@ -1,0 +1,31 @@
+.pull-quote {
+    font-size: var(--step-3);
+    font-weight: var(--thin-weight);
+    font-style: italic;
+    position: relative;
+    text-align: right;
+    padding-top: var(--space-16);
+    
+    @media (--for-desktop-up) {
+        margin-right: 5em;
+    }
+
+    &::before {
+        width: 250px;
+        background-color: hsla(var(--carnelian-dm, var(--carnelian)) / 10000%);
+        height: 2px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        content: '';
+    }
+    
+    &--content {
+        float: right;
+        max-width: 90vw;
+
+        @media (--for-desktop-up) {
+            max-width: 50vw;
+        }
+    }
+}

@@ -1,0 +1,13 @@
+.text-outline {
+    border: 1px solid black;
+    display: inline-block;
+    padding: var(--space-8) var(--space-16);
+    font-family: var(--clocktower-sans-serif);
+    font-size: var(--step-0);
+    margin: 0 auto;
+    margin-bottom: var(--space-16);
+
+    &.pill {
+        border-radius: 2em;
+    }
+}

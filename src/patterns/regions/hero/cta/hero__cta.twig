@@ -1,0 +1,31 @@
+{{ attach_library('clocktower/hero_cta') }}
+<div class="hero hero--full_width_media hero--{{heroHeight}}{% if mask is not null %} {{mask}} {% endif %}">
+  <div class="hero-image-wrap">
+    <div class="hero-image">
+      <div class="cover-image">
+      {{ media }}
+      </div>
+    </div>
+    {% if content %}
+      <div class="hero-contrast"></div>
+    {% endif %}
+  </div>
+  {% if content %}
+    <div class="hero-content hero-align-{{alignment}}">
+      <div class="hero-cta hero--text">
+          {{ content }}
+        {% if hero_links %}
+          {% if hero_links|length > 1 %}<ul class="cta-actions">{% endif %}
+            {% for link in hero_links %}
+              {% if hero_links|length > 1 %}<li>{% endif %}
+                <a class="link-button solid" href="{{link.uri}}">{{link.title}}</a>
+              {% if hero_links|length > 1 %}</li>{% endif %}
+            {% endfor %}
+          {% if hero_links|length > 1 %}</ul>{% endif %}
+        {% endif %}
+      </div>
+    </div>
+  {% endif %}
+
+  </div>
+</div>

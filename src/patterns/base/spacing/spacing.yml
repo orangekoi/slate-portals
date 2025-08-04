@@ -1,0 +1,24 @@
+spaces:
+  - name: 'Space XXS'
+    var: '--space-4s'
+    value: 2px
+  - name: 'Space XS'
+    var: '--space-4'
+    value: 4px
+  - name: 'Space SM'
+    var: '--space-8'
+    value: 8px
+  - name: 'Space MD'
+    var: '--space-16'
+    value: 16px
+  - name: 'Space LG'
+    var: '--space-32'
+    value: 32px
+  - name: 'Space XL'
+    var: '--space-64'
+    value: 64px
+  - name: 'Space XXL'
+    var: '--space-128'
+    value: 128px
+    
+  

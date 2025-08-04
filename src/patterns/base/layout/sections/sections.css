@@ -1,0 +1,32 @@
+section {
+    margin: var(--space-0) var(--space-0) var(--space-32) var(--space-0);
+
+    @media (--for-desktop-up) { 
+        margin: var(--space-0) var(--space-0) var(--space-64) var(--space-0);
+    }
+    .layout__container {
+        max-width: var(--max-content-width);
+        position: relative;
+        width: 100%;
+    }
+
+    &.is-full-width {
+        --max-content-width: 100vw;
+    }
+    
+    &.bg-carnelian {
+        background: hsla(var(--carnelian-dm, var(--carnelian)) / 100%);
+
+        /* padding: var(--space-64) var(--space-0); */
+    }
+
+    &.bg-dark {
+        background: hsla(var(--bg-dark) / 100%);
+
+        /* padding: var(--space-64) var(--space-0); */
+
+        
+    }
+    
+
+}

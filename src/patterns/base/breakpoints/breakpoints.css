@@ -1,0 +1,13 @@
+/* Device breakpoints */
+@custom-media --for-phone-only (max-width: 599px);
+@custom-media --for-tablet-portrait-up (min-width: 600px);
+@custom-media --for-tablet-landscape-up (min-width: 980px);
+@custom-media --for-desktop-up (min-width: 1025px);
+@custom-media --for-large-desktop-up (min-width: 1280px);
+@custom-media --for-xl-desktop-up (min-width: 1440px);
+@custom-media --for-xxl-desktop-up (width >= 1921px);
+
+
+/* Drupal toolbar breakpoints */
+
+/* @custom-media --toolbar (min-width: 976px); */

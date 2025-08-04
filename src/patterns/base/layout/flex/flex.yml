@@ -1,0 +1,4 @@
+spaces:
+  - name: 'Space XXS'
+    var: '--space-4s'
+    value: 2px

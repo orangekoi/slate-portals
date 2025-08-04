@@ -1,0 +1,18 @@
+ /* Main Menu  */
+ nav#priority-navigation {
+
+ }
+
+ .header--overlay {
+
+    nav#priority-navigation {
+
+        .menu {
+            .menu-item--priority {
+                a {
+                    color: hsl(var(--text-white));
+                }
+            }
+        }
+    }
+ }

@@ -1,0 +1,22 @@
+.section-header {
+    text-align: center;
+    position: relative;
+    margin-bottom: var(--space-32);
+    padding-bottom: var(--space-48);
+    margin-top: 0;
+    font-family: var(--clocktower-serif);
+
+    &::after {
+        content: '';
+        border-bottom: 3px solid hsl(var(--carnelian-dm, var(--carnelian)));
+        display: block;
+        bottom: 0;
+        height: var(--space-4);
+        position: absolute;
+        margin: var(--space-8) auto;
+        width: calc(var(--space-128) * 2);
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+}

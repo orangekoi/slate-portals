@@ -1,0 +1,8 @@
+headers:
+  - name: 'Header 2'
+    level: 2
+    modifier: 'title'
+    text: 'Header 2'
+  - name: 'Header 3'
+    level: 3
+    text: 'Header 3'

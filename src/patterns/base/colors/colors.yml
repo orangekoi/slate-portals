@@ -1,0 +1,29 @@
+colors:
+  Text Colors:
+    - name: 'Text Black'
+      var: '--text-black'
+      value: 'hsl(0 0% 20%)'
+    - name: 'Text White'
+      var: '--text-white'
+      value: 'hsl(0 100% 255%)'
+  Accent Colors:
+    - name: 'Carnelian'
+      var: '--carnelian'
+      value: 'hsl(0 74% 40%)'
+  Link Colors:
+    - name: 'Link Blue'
+      var: '--link-blue'
+      value: 'hsl(200 100% 30%)'
+    # - name: 'Link Underline Color'
+    #   var: '--link-underline-color'
+    #   value: 'hsl(200 100% 30%)'
+  Alert Colors:
+    - name: 'Error'
+      var: '--alert-error'
+      value: 'hsl(0 80% 40%)'
+    - name: 'Reminder'
+      var: '--alert-reminder'
+      value: 'hsl(0 80% 40%)'
+    - name: 'Hint'
+      var: '--alert-hint'
+      value: 'hsl(0 80% 40%)'

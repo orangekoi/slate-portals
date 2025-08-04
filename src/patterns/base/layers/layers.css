@@ -1,0 +1,10 @@
+@use 'base/breakpoints' as b;
+
+:root {
+    --layer-floor: 0;
+    --layer-ceiling: 10;
+    --layer-roof: 100;
+    --layer-sky: 1000;
+    --layer-space: 10000;
+
+}

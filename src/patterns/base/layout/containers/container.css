@@ -1,0 +1,72 @@
+.container {
+    /* margin: 0 auto; */
+    margin: var(--space-0) auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    width: 100%;
+    max-width: var(--max-content-width);
+    /* padding: var(--space-0) var(--space-32); */
+    
+    @media (--for-desktop-up) {
+        padding: var(--space-0);
+    }
+}
+
+.is-full-width {
+    .container {
+        @media (--for-desktop-up) {
+            max-inline-size: calc(100vw - var(--space-64));
+        }
+    }
+}
+
+.is-narrow-width {
+    @media (--for-tablet-portrait-up) {
+        /* --max-content-width: 400px; */
+    }
+    @media (--for-desktop-up) {
+        .container {
+            margin: var(--space-0) auto;
+            max-inline-size: calc(var(--max-content-width) * .75);    
+            padding: var(--space-0);
+        }
+        
+    }
+
+    @media (--for-large-desktop-up) {
+        /* --max-content-width:  */
+    }
+
+    @media (--for-xxl-desktop-up) {
+        
+    }
+}
+
+:root {
+
+    --max-content-width: calc(100vw - var(--space-16));
+        
+    @media (--for-tablet-portrait-up){
+        --max-content-width: calc(100vw - var(--space-32));
+
+    }
+
+    @media (--for-desktop-up) {
+        
+    }
+
+    @media (--for-large-desktop-up) {
+
+    }
+
+    @media (--for-xl-desktop-up) {
+        --max-content-width: calc(100vw - var(--space-128));
+    }
+    
+    @media (--for-xxl-desktop-up) {
+        
+        --max-content-width: calc(1920px - var(--space-128));
+    }
+}

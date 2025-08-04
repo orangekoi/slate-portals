@@ -1,0 +1,17 @@
+{% for title, list in colors %}
+<h2 class="storybook-section-header">{{ title }}</h2>
+    <div class="color-swatch-display">
+        {% for item in list %}
+            <div class="color-swatch-demo">
+                <div class="color-swatch--preview {% if item.var == '--text-white' %}light-color{% endif %}" style="background-color: hsla(var({{ item.var }})"></div>
+                <div class="color-swatch--information">
+                    <div class="color-swatch-variables">
+                        <span><strong>Name:</strong> {{ item.name }} </span>
+                        <span><strong>Variable:</strong> {{ item.var }}</span>
+                        <span><strong>Value:</strong> {{ item.value }}</span>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+{% endfor %}

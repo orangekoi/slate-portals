@@ -1,0 +1,114 @@
+/* Site Colors */
+
+html, html[data-theme="light"] {
+    color-scheme: light;
+    /* Menu Colors */
+    --menu-header-color: 0 75% 42%;
+    --menu-button-color: 0 0% 20%;
+    --menu-link-color: 0 0% 20%;
+    --menu-background: 0 100% 100%;
+
+    /* Element Colors */
+    --header-background: 0 100% 100%; /* Header Background */
+    --body-background: 0 100% 100%; /* Body Background */
+    --footer-background: 0 0% 14%; /* Main Footer Background */
+    --footer-background-secondary: 0 0% 9%; /* Privacy Footer */
+
+    /* Body Text Colors */
+    --text-black: 0 0% 20%; /* body text color */
+    --text-white: 0 100% 100%; /* color to be used for white text */
+
+    /* Link Colors */
+    --link-blue: 200 100% 30%;
+    --link-underline-color: 200 100% 30% 1;
+
+    /* Accent Colors */
+    --carnelian: 0 74% 40%;
+    --bg-dark: 0 0% 13%;
+    --input-border: 0 0% 58%;
+
+    /* Border Colors  */
+    --border-carnelian: 0 74% 40%;
+
+    /* Cards */
+    --card-light-dm: 0 0% 100%; /* For dark background of cards */
+    --card-border: 0 0% 90%;
+    --card-background-light: 0 100% 100%; /* For light background cards */
+
+    --card-background-dark: 0, 0%, 20%;
+    --card-shadow: 228 18% 66%; /* Card Shadow */
+
+    /* Gray Linear Gradient  */
+    --gradient-color-one: 0 0% 95%;
+    --gradient-color-two: 0 0% 100%;
+
+    /* Alert Boxes */
+    --alert--reminder-light: 0 0% 95%;
+
+    /* Input Boxes */
+    --input-background: 0 100% 100%;
+
+    /* Section Backgrounds */
+    --section-gray: 0 0% 13%;
+
+    /* Table Zebra  */
+    --zebra-dm-stripe: 0 0% 97%;
+
+}
+
+html[data-theme="dark"], .bg-dark {
+    color-scheme: dark;
+
+    /* Menu Colors */
+    --menu-dm-header-color: 0 100% 100%;
+    --menu-text-black-dm: 0 100% 100%;
+    --menu-background-dm: 0 0% 5%;
+    --menu-dm-button-color: 0 100% 100%;
+
+    /* Body Colors */
+    --header-dm-background: 0 0% 8%; /* Main Body Background */
+    --body-dm-background: 0 0% 8%; /* Main Body Background */
+    --footer-dm-background: 205 10% 5%; /* Main Footer Background */
+    --footer-dm-background-secondary: 205 10% 2%; /* Privacy Footer */
+
+    /* Body Text Colors */
+    --text-black-dm: 0 0% 90%; /* body text color */
+    --text-white-dm: 0 0% 100%; /* color to be used for white text */
+
+    /* Link Colors */
+    --link-dm-blue: 201 93% 75%;
+    --link-dm-underline-color: 201 93% 75% 1;
+
+        /* Accent Colors */
+    --carnelian-dm: 4 85% 57%;
+
+    /* Border Colors  */
+    --border-carnelian-dm: 4 85% 57%;
+    
+    /* Cards */
+    --card-light-dm: 205 10% 15%; /* For dark background cards */
+    --card-border-dm: 0 0% 16%; /* For light background cards */
+    --card-shadow-dm: 0 0% 11%; /* Card Shadow */
+
+    /* Gray Linear Gradient */
+    --gradient-color-one: 205 10% 15%;
+    --gradient-color-two: 0 0% 8%;
+
+    /* Alert Boxes */
+    --alert-dm-reminder-light: 205 10% 15%;
+
+    /* Input Boxes */
+    --input-dm-background: 0 0% 30%;
+    --input-dm-border: 0 0% 25%;
+
+
+    /* Section Backgrounds */
+    --section-dm-gray: 205 10% 5%;
+
+        /* Table Zebra */
+        --zebra-dm-stripe: 0 0% 6%;
+}
+
+
+
+

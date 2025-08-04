@@ -1,0 +1,92 @@
+.page-intro {
+    padding-bottom: var(--space-32);
+
+    .intro-header {
+        margin: var(--space-32) auto 0;
+        grid-column: 1/4;
+        max-width: 95%;
+        
+        @media (--for-tablet-portrait-up) {
+            margin-top: var(--space-32);
+        }
+        
+        @media (--for-desktop-up) {
+            margin-top: 0;
+        }
+        
+        &::before {
+            content: '';
+            display: block;
+            position: relative;
+            height: var(--space-32);
+            width: 1px;
+            background-color: #333;
+            margin: var(--space-0) auto var(--space-16);
+            
+            @media (--for-desktop-up) {
+                margin: 0 auto var(--space-48);
+                height: var(--space-64);
+                
+            }
+        }
+        
+        h2 {
+            text-align: center;
+            margin: 0;
+            font-family: var(--clocktower-serif);
+            font-size: var(--step-4);
+            font-weight: var(--regular-weight);
+    
+            @media (--for-desktop-up) {
+                max-width: 75%;
+                padding: 0 var(--space-64);
+                margin: 0 auto;
+    
+            }
+        }
+    }
+    
+    .intro-paragraph {
+        margin: var(--space-32);
+        grid-column: content;
+        position: relative;
+        margin-bottom: var(--space-0);
+       @media (--for-desktop-up) {
+           margin: 0 0 var(--space-0);
+       }
+    
+       @media (--for-large-desktop-up) {
+           margin: var(--space-32) 0 var(--space-0);
+       }
+        
+        p {
+            text-align: center;   
+            font-family: var(--clocktower-sans-serif);
+            font-size: var(--step-2);
+            margin: 0 auto;
+            font-weight: var(--light-weight);
+
+    
+            @media (--for-desktop-up) {
+                max-width: 60ch;
+            }
+        }
+    
+        a {
+            font-size: var(--step-2);
+        }
+    }
+
+    &::after {
+        display: block;
+        position: absolute;
+        content: '';
+        width: 10%;
+        height: .25px;   
+        background: hsl(var(--text-black-dm, var(--text-black)) / 20%);
+        left: 50%;
+        bottom: 0;
+        transform: translate(-50%, 50%);
+        
+    }
+}

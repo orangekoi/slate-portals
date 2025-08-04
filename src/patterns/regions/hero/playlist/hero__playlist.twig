@@ -1,0 +1,11 @@
+{{ attach_library('clocktower/hero') }}
+
+
+
+<div class="hero hero--{{ heroType }} hero--{{heroHeight}}">
+
+  {% if hero.field_video_playlist %}
+    {{ hero.field_video_playlist | view}}
+  {% endif %}
+</div>
+

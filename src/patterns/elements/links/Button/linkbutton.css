@@ -1,0 +1,144 @@
+.link {
+
+    &-text {
+        color: hsl(var(--text-black-dm, var(--text-black)) 1);
+        position: relative;
+        padding-right: var(--space-16);
+        text-decoration: none;
+    
+        &::after {
+            content: '\f054';
+            color: hsl(var(--carnelian-dm, var(--carnelian)) 1);
+            position: absolute;
+            right: 0;
+            font-family: var(--font-awesome);
+        }
+    
+        &:hover, &:focus {
+            text-decoration: underline;
+        }
+    }
+
+    &-button {
+        text-decoration: none;
+        position: relative;
+        padding: var(--space-8) var(--space-16);
+        text-transform: uppercase;
+        display: inline-block;
+        margin: 0;
+    
+        /* &.title-case {
+            text-transform: capitalize;
+        } */
+        &.solid {
+            color: hsl(var(--text-white-dm, var(--text-white)));
+            background-color: hsl(var(--carnelian-dm, var(--carnelian)));
+            font-weight: var(--regular-weight);
+            border: 1px solid transparent;
+            
+            &:hover {
+                color: hsl(var(--carnelian));
+                background-color: transparent;
+                border: 1px solid hsl(var(--carnelian));
+            }
+        }
+
+        &.outline {
+            border: 1px solid hsl(var(--carnelian-dm, var(--carnelian)));
+            color: hsla(var(--carnelian));
+            display: inline-block;
+            text-align: center;
+            font-weight: var(--regular-weight);
+
+            &:hover, &:focus {
+                background-color: hsl(var(--carnelian));
+                color: hsl(var(--text-white));
+                
+            }
+        }
+
+        &.pill {
+
+            border-radius: 2rem;
+            color: hsl(var(--carnelian-dm, var(--carnelian)));
+
+        }
+
+        &.with-icon {
+            i, svg {
+                display: inline-block;
+                padding-right: var(--space-8);
+            }
+        }
+    }
+
+    
+
+    &.with-arrow {
+        border: 1px solid hsla(var(--card-border));
+        background-color: hsl(var(--card-color-light) 1);
+        text-decoration: none;
+        color: hsla(var(--text-black-dm, var(--text-black)));
+        font-size: var(--step-2);
+        display: flex;
+        align-items: center;
+        padding: 0 var(--space-16);       
+
+        @media (--for-desktop-up) {
+            justify-content: center;
+            text-align: center;
+            font-size: var(--step-1);
+            padding: 0 var(--space-16);
+
+        }
+        
+        &.title-card-link {
+            height: 100%;
+            width: 100%;
+            min-height: 100px;
+            justify-content: center;      
+            text-align: left;   
+            border: 1px solid hsla(var(--text-black-dm, var(--text-black)));
+
+            &::after {
+                display: inline-block;
+                content: "\f138";
+                font-family: var(--font-awesome);
+                padding-left: var(--space-8);
+                padding-right: var(--space-8);
+
+                @media (--for-desktop-up) {
+                    padding-left: var(--space-16);
+                    padding-right: var(--space-16);
+                }
+            }
+
+
+            &:hover, &:focus {
+                background-color: #b31b1b;
+                color: #FFF;
+                border: 1px solid #b31b1b;
+                
+            }
+        }
+        
+        &.title-card-square {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-sizing: border-box;
+            color: hsl(var(--text-black-dm, var(--text-black)) 1);
+            text-decoration: none;
+            border-bottom: 0;
+            height: 104px;
+            width: 104px;
+
+            &:hover, &:focus {
+                background-color: hsl(var(--carnelian-dm, var(--carnelian)) 1);
+                color: hsl(var(--text-white-dm, var(--text-white)) 1);
+                border-color: hsl(var(--carnelian-dm, var(--carnelian)) 1);
+                animation: unset;
+            }
+        }
+    }
+}

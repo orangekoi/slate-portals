@@ -1,0 +1,108 @@
+.menu__utility-wrap {
+
+    display: none; 
+    flex-direction: row;
+    justify-content: space-between;
+    height: 50px;
+    align-items: center;
+    gap: var(--space-16);
+
+    @media (--for-desktop-up) {
+        display: flex;
+    }
+
+    ul.utility-nav {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        z-index: 10;
+        gap: var(--space-16);
+        margin-bottom: var(--space-0);
+        align-items: center;
+
+        li {
+            padding: 0 var(--space-8);
+
+            &:first-child {
+                padding: 0 var(--space-8) 0 0;
+            }
+            &:last-child {
+                padding: 0 0 0 var(--space-8);
+            }
+            a {
+                font-size: var(--step--1);
+                text-decoration: none;
+                position: relative;
+                /* margin-bottom: var(--space-8); */
+                /* padding-bottom: var(--space-4); */
+                font-weight: var(--regular-weight);
+
+                &.link-button {
+                    display: inline-block;
+                    padding: var(--space-4) var(--space-8);
+                }
+
+                &:hover, &:focus {
+                    text-decoration: underline;
+                }
+
+                &:not(.link-button) {
+                    color: hsla(var(--text-black-dm, var(--text-black)),1);
+                    --link-color: var(--text-black-dm, var(--text-black));
+
+                                            
+                    /* &.active, &:focus, &:hover {
+    
+                        --link-underline-color: 200, 100%, 30%, 1;
+                        --background-height: .07em;
+                        text-decoration: none;
+                        
+    
+                            &:after {
+                                width: 100%;
+                                transition-duration: 0.25s;
+                                transition-property: width ease-in;
+                            }
+    
+                            
+                    
+    
+                        button {
+    
+                            &:before {
+                                display: inline-block;
+                                transform: rotate(180deg);
+                                color: #b31b1b;
+                                transition-duration: 0.5s;
+                                transition-property: transform;
+                                transform-origin: center;
+                            }
+                        }
+    
+                        
+                    } */
+                }
+
+                
+            }
+        }
+    }
+}
+
+
+.header--overlay {
+
+    .menu__utility-wrap {
+        
+        #utility-nav {
+            .utility-nav {
+                li {
+                    a:not('.link-button') {
+                        color: hsl(var(--menu-link-white));
+                    }
+                }
+            }
+        }
+    }
+}

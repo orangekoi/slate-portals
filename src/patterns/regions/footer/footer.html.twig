@@ -1,0 +1,36 @@
+{{ attach_library('clocktower/footer') }}
+<footer>
+    <div class="layout">
+      <div class="layout__container">
+        <div class="layout__region layout__region--first">
+          {{ site_address|raw }}
+          {{ hours }}
+        </div>
+        <div class="layout__region layout__region--second">
+          <ul class="footer-social">
+          {% if social.facebook_url is not empty %}
+            <li><a href="{{ facebook_url }}"><i class="fa-brands fa-facebook-f"></i></i> <span class="sr-only">Facebook</a></li>
+          {% endif %}
+          {% if social.twitter_url is not empty %}
+            <li><a href="{{ twitter_url }}"><i class="fa-brands fa-x-twitter"></i> <span class="sr-only">Twitter / X</a></li>
+          {% endif %}
+          {% if social.instagram_url is not empty %}
+            <li><a href="{{ instagram_url }}"><i class="fa-brands fa-instagram"></i><span class="sr-only">Instagram</a></li>
+          {% endif %}
+          {% if social.youtube_url is not empty %}
+            <li><a href="{{ youtube_url }}"><i class="fa-brands fa-linkedin-in"></i><span class="sr-only">Facebook</a></li>
+          {% endif %}
+        </div>
+        
+        <div class="layout__region layout__region--third">
+          <div>
+            {{ enrollment }}
+          </div>
+          <div>
+            {{ cornell }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>

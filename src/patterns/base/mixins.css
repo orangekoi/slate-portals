@@ -1,0 +1,94 @@
+--box-shadow {
+    box-shadow: 0 3px 8px 2px rgb(239 239 239 / 71%); 
+    box-shadow: 0 1px #fff inset, 0 1px 2px #c8cfe6;
+}
+
+
+--linearGradient {
+    background: rgb(196 196 196);
+    background: linear-gradient(var(--angle, 90deg), hsla(var(--gradient-color-one)) 0%, hsla(var(--gradient-color-two)) 100%);
+}
+
+--boxShadow {
+    box-shadow:
+                        0  5px 10px var(--cardShadowOne, rgb(154 160 185 / 5%)),
+                        0 10px 15px var(--cardShadowTwo, rgb(166 173 201 / 20%));
+}
+
+--boxShadowLight {
+    box-shadow:
+                        0  0 10px var(--cardShadowOne, rgb(154 160 185 / 5%)),
+                        0 0 15px var(--cardShadowTwo, rgb(166 173 201 / 10%));
+}
+
+--linkHover {
+    position: relative;
+    display: inline;
+    color: hsl(var(--link-blue) 1);
+    overflow: hidden;
+    text-decoration: none;
+    background-image: linear-gradient(to right, hsl(var(--carnelian-dm, var(--carnelian)) 1), hsl(var(--carnelian-dm, var(--carnelian)) 1) 50%, hsl(var(--link-blue) 1) 50%);
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+    background-size: 200% 1px;
+    line-height: 1.8;
+    white-space: break-spaces;
+    padding-bottom: var(--space-2);
+
+    &:hover, &:focus {
+        animation: link-hover 375ms;        
+        background-position: 0 100%;
+        color: hsl(var(--carnelian-dm, var(--carnelian)) 1);
+    }
+}
+
+@keyframes link-hover {
+    0% {
+        color: hsl(var(--link-blue) 1);
+        background-position: 100% 100%;
+    }
+
+    100% {
+        background-position: 0% 100%;
+        color: hsl(var(--carnelian-dm, var(--carnelian)) 1);
+    }
+}
+
+--linkHoverTransparent {
+    position: relative;
+    display: inline;
+    color: hsl(var(--link-color) 1);
+    overflow: hidden;
+    background: linear-gradient(to right, hsl(var(--link-color) 1), hsl(var(--link-color) 1) 50%, hsl(var(--link-color) 1) 50%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 100%;
+    background-position: 100%;
+    transition: background-position 275ms ease;
+    text-decoration: underline;
+    white-space: break-spaces;
+
+    &::before {
+        content: '';
+        display: block;
+        width: 0%;
+        position: absolute;
+        height: 1px;
+        background: linear-gradient(to right, hsl(var(--link-color) 1), hsl(var(--link-color) 1) 50%, transparent 50%);
+        background-size: 200% 100%;
+        background-position: 100%;
+        transition: all 275ms ease;
+        left: 0;
+        bottom: var(--space-2);
+    }
+
+
+    &:hover, &:focus {
+        background-position: 0 100%;
+
+        &::before {
+            width: 100%;
+            background-position: 0 100%;
+        }
+    }
+}

@@ -1,0 +1,60 @@
+/* .link {
+    &--text {
+        color: hsl(var(--text-black-dm, var(--text-black)) 1);
+        position: relative;
+        padding-right: var(--space-16);
+        text-decoration: none;
+    
+        &::after {
+            content: '\f054';
+            color: hsl(var(--carnelian-dm, var(--carnelian)) 1);
+            position: absolute;
+            right: 0;
+            font-family: var(--font-awesome);
+        }
+    
+        &:hover, &:focus {
+            text-decoration: underline;
+        }
+    }
+
+    &--button {
+        text-decoration: none;
+        position: relative;
+        padding: var(--space-8) var(--space-16);
+        text-transform: uppercase;
+        display: inline-block;
+        margin: 0;
+    
+        &.outline {
+            border: 1px solid hsl(var(--carnelian-dm, var(--carnelian)) 1);
+            color: hsla(var(--button-text));
+            display: inline-block;
+            text-align: center;
+    
+            &:hover, &:focus {
+                background: hsl(var(--carnelian-dm, var(--carnelian)) 1);
+                color: hsla(var(--button-text-reverse));
+                
+            }
+        }
+    
+    }
+
+} */
+
+a:not([class]) {
+    color: hsl(var(--link-blue));
+
+}
+
+a {
+    text-decoration-thickness: 1px;
+    text-underline-offset: var(--space-4);
+    color: hsl(var(--link-blue));
+
+    &:hover, &:focus {
+        text-decoration-thickness: 2px;
+    }
+
+}

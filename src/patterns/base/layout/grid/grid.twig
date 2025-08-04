@@ -1,0 +1,12 @@
+<div class="storybook-section">
+
+    <h2 class="storybook-section-header">Spacing Sizes</h2>
+    <ul class="storybook-component-list space-list">
+        {% for space in spaces %}
+        <li class="storybook-component space-item">
+            <h3>{{space.var}}</h3>
+            <div style="height: {{ space.value }}; width: {{ space.value }}; background: #ddd;"></div>
+        </li>
+        {% endfor %}
+    </ul>
+</div>
