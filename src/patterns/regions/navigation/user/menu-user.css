@@ -53,7 +53,7 @@ nav#ct-user-menu {
                 > a.top-level, span {
                     font-family: var(--clocktower-sans-serif);
                     color: hsl(var(--menu-link-black));
-                    font-size: var(--step-0);
+                    font-size: var(--step-1);
                     text-decoration: none;
                     padding: var(--space-16) var(--space-16);
                     margin-bottom: var(--space-0);
@@ -61,7 +61,7 @@ nav#ct-user-menu {
                     display: block;
                     width: 100%;
                     @media (--for-desktop-up) {
-                        font-size: var(--step-0);
+                        font-size: var(--step-1);
                         border-bottom: 2px solid transparent;
 
                     }
@@ -92,7 +92,7 @@ nav#ct-user-menu {
                     a.top-level {
                         font-family: var(--clocktower-serif);
                         color: hsl(var(--text-black-dm, var(--text-black)));
-                        font-size: var(--step-0);
+                        font-size: var(--step-1);
                         text-decoration: none;
                         padding: 0;
 
@@ -188,7 +188,7 @@ nav#ct-user-menu {
                         a {
                             display: block;
                             white-space: nowrap;
-                            font-size: var(--step-0);
+                            font-size: var(--step-1);
                             font-family: var(--clocktower-sans-serif);
                             padding: var(--space-16);
                             margin-bottom: var(--space-zero);

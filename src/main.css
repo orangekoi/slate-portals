@@ -14,6 +14,7 @@
 
 /* Elements */
 /* @import 'patterns/elements/buttons/buttons.css'; */
+@import 'patterns/elements/lists/list-checklist/list-checklist.css';
 @import 'patterns/elements/heading/heading.css';
 @import 'patterns/elements/intro/into_header.css';
 @import 'patterns/elements/links/Button/linkbutton.css';

@@ -22,6 +22,7 @@ import './patterns/elements/title/title.css';
 import './patterns/elements/text-modifiers/text-modifiers.css';
 import './patterns/elements/pull-quote/pull-quote.css';
 import './patterns/elements/lists/lists-standard/lists-standard.css';
+import './patterns/elements/lists/list-checklist/list-checklist.css';
 import './patterns/elements/lists/link-list/link-list.css';
 import './patterns/elements/links/Text/linktext.css';
 import './patterns/elements/links/Button/linkbutton.css';

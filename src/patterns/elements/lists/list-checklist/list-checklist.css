@@ -1,0 +1,36 @@
+.list--checklist {
+
+    list-style: none;
+    padding-left: var(--space-0);
+
+
+    li.checklist-item {
+
+        display: grid;
+        grid-template-columns: 150px 1fr 200px;
+        padding: var(--space-16) var(--space-8);
+
+        .checklist-item-status {
+
+            &.awaiting {
+
+                i {
+                    color: hsl(var(--carnelian-effective));
+                }
+            }
+        }
+
+        .checklist-item-title {
+
+        }
+
+        .checklist-item-date {
+
+        }
+
+        &:nth-child(even) {
+            background: #f7f7f7;
+        }
+    }
+
+}
