@@ -67,7 +67,7 @@
                        &::before {
                            display: inline-block;
                            transform: rotate(180deg);
-                           color: #b31b1b;
+                           color: hsl(var(--carnelian-effective));
                            transition-duration: 0.5s;
                            transition-property: transform;
                            transform-origin: center;
@@ -297,31 +297,21 @@
                    content: '\f078';
                    color: hsl(var(--text-black-dm, var(--text-black)));
                    font-family: var(--font-awesome);
-
-                    /* height: 15px; */
-
-                    /* width: 15px; */
                    font-size: var(--step--1);
                    transition: transform 2s ease-in-out;
                    transform: rotate(0deg);
-
-                    /* transition-property: transform; */
-
-                    /* transform-origin: center; */
                    
                    @media (--for-xl-desktop-up) {
-                        /* height: 25px; */
-
-                        /* width: 25px; */
                        font-size: var(--step-0);
 
                    }
                }
 
-               &:hover, &:focus {
+               &:hover, 
+               &:focus {
                    &::before {
-                       color: hsl(var(--carnelian-dm, var(--carnelian)));
-                   };
+                       color: hsl(var(--carnelian-effective));
+                   }
                }
            }
 
@@ -467,7 +457,7 @@
             }
             
             &:hover, &:focus {
-                background: hsl(var(--carnelian-dm, var(--carnelian)));
+                background: hsl(var( --carnelian-effective));
                 color: hsl(var(--text-white)) !important;
             }
 
@@ -578,12 +568,12 @@
                     transition: all 500ms ease-in;
     
                     &:hover {
-                        color: hsl(var(--carnelian-dm, var(--carnelian)));
+                        color: hsl(var( --carnelian-effective));
                         cursor: pointer;
 
                         i {
                                 /* text-decoration: underline; */
-                            border-color: hsl(var(--carnelian-dm, var(--carnelian)));
+                            border-color: hsl(var( --carnelian-effective));
                         }
                     }
 
@@ -696,7 +686,7 @@
 
                             /* padding: var(--space-0) 5%; */
                         cursor: pointer;
-                        color: hsl(var(--carnelian-dm, var(--carnelian)));
+                        color: hsl(var( --carnelian-effective));
                         transition: all 500ms ease-in;
 
                         @media (--for-desktop-up) {
@@ -714,7 +704,7 @@
                         }
     
                         &:hover, &:focus {
-                            color: hsl(var(--carnelian-dm, var(--carnelian)));
+                            color: hsl(var(--carnelian-effective));
                         }   
                     }
 
@@ -779,7 +769,7 @@
                                 &:hover, &:focus {
                                     
                                     &::after {
-                                        color: hsl(var(--carnelian-dm, var(--carnelian)));
+                                        color: hsl(var( --carnelian-effective));
                                         padding-left: var(--space-16);
                                         left: var(--space-16);
                                         transition: all 500ms ease-in-out;
@@ -797,7 +787,7 @@
                                 white-space: break-spaces;
 
                                 &:hover, &:focus {
-                                    border-bottom: 2px solid hsl(var(--carnelian-dm, var(--carnelian)));
+                                    border-bottom: 2px solid hsl(var( --carnelian-effective));
                                     color: hsl(var(--menu-link-black)) !important;
                                 }
                             }
@@ -908,7 +898,7 @@
                             font-family: var(--clocktower-serif);
                             font-size: var(--step-6);
                             font-weight: var(--regular-weight);
-                            color: hsl(var(--carnelian-dm, var(--carnelian)));
+                            color: hsl(var( --carnelian-effective));
                             transition: all 500ms ease-in;
                             line-height: 1;
                         }
@@ -1040,7 +1030,7 @@
             }
             
             &:hover, &:focus {
-                background: hsl(var(--carnelian-dm, var(--carnelian)));
+                background: hsl(var( --carnelian-effective));
                 color: hsl(var(--text-white-dm, var(--text-white)));
             }
 
@@ -1197,7 +1187,7 @@
                             color: hsl(var(--text-black-dm, var(--text-black)));
                             
                             @media (--for-desktop-up) {
-                                border-bottom: 2px solid hsl(var(--carnelian-dm, var(--carnelian)));
+                                border-bottom: 2px solid hsl(var( --carnelian-effective));
 
                             }
                         }
@@ -1244,7 +1234,7 @@
                                 font-family: var(--font-awesome);
 
                                 @media (--for-phone-only) {
-                                    color: hsl(var(--carnelian-dm, var(--carnelian)));
+                                    color: hsl(var( --carnelian-effective));
                                     font-weight: var(--fa-solid);
                                 }
                             }
@@ -1282,7 +1272,7 @@
                             visibility: hidden;
                             position: absolute;
                             border: 1px solid hsl(var(--text-black-dm, var(--text-black)) 10%);
-                            border-top: 5px solid hsl(var(--carnelian-dm, var(--carnelian)));
+                            border-top: 5px solid hsl(var( --carnelian-effective));
                             display: block;
                             padding-left: var(--space-0);
                             width: auto;
@@ -1508,7 +1498,7 @@ header#site-header.reverse, .header--overlay {
          
                             &:hover, &:focus {
                                 &::before {
-                                    color: hsl(var(--carnelian-dm, var(--carnelian)));
+                                    color: hsl(var( --carnelian-effective));
                                     
                                 };
                             }

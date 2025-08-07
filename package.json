@@ -1,5 +1,5 @@
 {
-  "name": "focus2",
+  "name": "Clocktower",
   "type": "module",
   "version": "1.0.0",
   "description": "",
@@ -24,6 +24,7 @@
     "postcss-custom-media": "^11.0.1",
     "postcss-import": "^16.1.0",
     "postcss-loader": "^8.1.1",
+    "postcss-nesting": "^13.0.2",
     "postcss-normalize": "^13.0.1",
     "postcss-preset-env": "^10.0.3",
     "postcss-url": "^10.1.3",

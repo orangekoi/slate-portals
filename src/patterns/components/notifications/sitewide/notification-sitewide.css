@@ -1,0 +1,24 @@
+.notification--sitewide {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #b31b1b;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    p {
+        color: #FFF;
+        font-size: var(--step-0);
+        margin: var(--space-0);
+        padding: var(--space-16) var(--space-32);
+    }
+
+}
+
+.sitewide-notifcation-enabled { 
+
+    margin-top: 5em;
+}

@@ -112,3 +112,6 @@ html[data-theme="dark"], .bg-dark {
 
 
 
+:root {
+    --carnelian-effective: var(--carnelian-dm, var(--carnelian));
+}

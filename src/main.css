@@ -26,7 +26,7 @@
 
 /* Components */
 @import 'patterns/components/dropdown-menu/dropdown-menu.css';
-
+@import 'patterns/components/notifications/status/notification-status.css';
 
 /* Regions */
 @import 'patterns/regions/body/body.css';
@@ -35,4 +35,5 @@
 @import 'patterns/regions/hero/cta/hero__cta.css';
 @import 'patterns/regions/navigation/main/menu-main.css';
 @import 'patterns/regions/navigation/user/menu-user.css';
+@import 'patterns/regions/navigation/sidebar/navigation-sidebar.css';
 @import 'patterns/regions/navigation/utility/menu-utility.css';
