@@ -25,6 +25,7 @@
 
 
 /* Components */
+@import 'patterns/components/accordion/accordion.css';
 @import 'patterns/components/dropdown-menu/dropdown-menu.css';
 @import 'patterns/components/notifications/status/notification-status.css';
 

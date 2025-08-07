@@ -1,0 +1,247 @@
+.accordion-group {
+    margin: var(--space-0) auto var(--space-32);
+    position: relative;
+    width: 100%;
+
+    @media (--for-desktop-up) {
+        min-width: 50%;
+        width: 100%;
+    }
+
+    .expand-all {
+        background: transparent;
+        color: hsla(var(--carnelian-dm, var(--carnelian)) / 100%);
+        padding: var(--space-4) var(--space-16);
+        left: 100%;
+        position: relative;
+        transform: translateX(-100%);
+        border: 1px solid hsla(var(--border-carnelian) / 100%);
+        border-radius: .5em;
+        margin-bottom: var(--space-16);
+        min-width: 5em;
+        cursor: pointer;
+        font-size: var(--step--1);
+
+        &:focus, &:hover {
+            background: hsla(var(--carnelian-dm, var(--carnelian)) / 100%);
+            color: hsla(var(--text-white-dm, var(--text-white)) / 100%);
+            
+        }
+
+        &.collapse-all {
+            background: hsla(var(--carnelian-dm, var(--carnelian)) / 100%);
+            color: hsla(var(--text-white-dm, var(--text-white)) / 100%);
+        }
+    }
+}
+
+.accordion-item {
+    position: relative;
+    padding: var(--space-8) var(--space-0);
+    
+    &::after {
+        content: '';
+        width: 100%;
+        height: 1px;
+        display: block;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background: hsla(var(--text-black-dm, var(--text-black)) / 10%);
+        
+    }
+
+    &:hover {
+        background: hsla(var(--card-background-light) / 25%);
+
+        h3 {
+            button {
+                color: hsla(var(--carnelian-dm, var(--carnelian)) / 100%);
+            }
+        }
+        
+        &::after {
+            height: 2px;
+            background-color: hsla(var(--carnelian-dm, var(--carnelian)) / 100%);
+            
+        }
+    }
+    
+
+    h3 {
+        width: 100%;
+        display: flex;
+        margin-bottom: var(--space-0);
+        font-weight: var(--light-weight);
+        margin-top: 0;
+        
+
+        button {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            background: transparent; 
+            color: hsla(var(--text-black-dm, var(--text-black)) / 100%);
+            font-weight: var(--light-weight);
+            position: relative;
+            width: 100%;
+            padding: var(--space-8) var(--space-0) var(--space-8) var(--space-4);
+            margin-bottom: var(--space-0);
+            font-size: var(--step-1);
+            text-align: left;
+            cursor: pointer;
+            border: none;
+            
+            &::after {
+                content: '\e59b';
+                height: 25px;
+                width: 25px;
+                display: block;
+                font-family: var(--font-awesome);
+                transform: rotate(45deg);
+                font-size: var(--step-0);
+            }
+            
+            span {
+                font-weight: var(--light-weight);
+                max-width: 85%;
+
+            }
+            
+
+        }
+    }
+
+
+
+    .accordion-panel {
+        background: transparent;
+        display: none;
+        padding-left: var(--space-32);
+        padding-bottom: var(--space-32);
+
+        h4 {
+            margin-top: var(--space-0);
+            margin-bottom: var(--space-16);
+            font-family: var(--clocktower-sans-serif);
+            font-weight: var(--semi-bold-weight);
+
+        }
+
+        h5 {
+            color: hsl(var(--carnelian-dm, var(--carnelian)));
+            margin-top: var(--space-zero);
+            margin-bottom: var(--space-8);
+            font-size: var(--step-1);
+
+        }
+        
+        p, ul, dl {
+            font-size: var(--step-1);
+        }
+        
+    }
+
+    &.active {
+        display: block;
+        position: relative;
+
+        &::before {
+            display: block;
+            content: '';
+            height: 100%;
+            width: 2px;
+            background-color: hsla(var(--carnelian-dm, var(--carnelian)) / 100%);
+        }
+
+        h3 {
+            button {
+                color: hsla(var(--carnelian-dm, var(--carnelian)) / 100%);
+                font-weight: var(--regular-weight);
+                
+                &::before {
+                    display: none;
+                }
+
+                &::after {
+                    transform: rotate(0deg);
+                }
+            }
+        }
+
+        .accordion-panel {
+            display: block;
+            position: relative;
+        }
+    }
+}
+
+&.reduced {
+    .accordion-item {
+        &:hover {
+            background: transparent;
+        }
+
+        .action-items {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .accordion-trigger, a {
+                font-size: var(--step--1);
+                display: inline;
+                background: transparent;
+                border: 1px solid hsla(var(--border-carnelian) / 100%);
+                border-radius: .25em;
+                color: hsla(var(--carnelian-dm, var(--carnelian)) / 100%);
+                padding: var(--space-4) var(--space-8);
+                margin: var(--space-8);
+                text-decoration: none;
+                line-height: 1;
+
+                i {
+                    padding-right: var(--space-4);
+                }
+                
+                &:hover, &:focus {
+                    background-color: hsla(var(--text-white-dm, var(--text-white)) / 100%);
+                    color: hsla(var(--carnelian-dm, var(--carnelian)) / 100%);
+                }
+
+                &:first-child {
+                    margin-left: 0;
+                }
+            }
+        }
+
+        .accordion-panel {
+            margin-top: var(--space-16);
+            padding: var(--space-16);
+            background: hsla(var(--text-black-dm, var(--text-black)) / 5%);
+        }
+
+        &::after {
+            display: none;
+        }
+    }
+
+    .expand-all {
+        display: none;
+    }
+}
+
+/* Dark Mode overrides */
+
+html[data-theme="dark"] {
+    .accordion-item {
+        &.active {
+            h3 {
+                button {
+                    color: hsla(var(--text-white-dm, var(--text-white)) / 100%);
+                }
+            }
+        }
+    }
+    
+}
