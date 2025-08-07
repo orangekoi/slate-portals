@@ -31,6 +31,7 @@ import './patterns/elements/heading/heading.css';
 import './patterns/elements/buttons/buttons.css';
 import './patterns/components/notifications/status/notification-status.css';
 import './patterns/components/notifications/sitewide/notification-sitewide.css';
+import './patterns/components/notifications/inline/notification-inline.css';
 import './patterns/components/dropdown-menu/dropdown-menu.css';
 import './patterns/components/accordion/accordion.css';
 import './patterns/base/reset.css';

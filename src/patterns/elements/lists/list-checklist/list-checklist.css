@@ -18,6 +18,12 @@
                     color: hsl(var(--carnelian-effective));
                 }
             }
+
+            &.completed {
+                i {
+                    color: green;
+                }
+            }
         }
 
         .checklist-item-title {

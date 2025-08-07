@@ -29,6 +29,7 @@
 @import 'patterns/components/accordion/accordion.css';
 @import 'patterns/components/dropdown-menu/dropdown-menu.css';
 @import 'patterns/components/notifications/status/notification-status.css';
+@import 'patterns/components/notifications/inline/notification-inline.css';
 
 /* Regions */
 @import 'patterns/regions/body/body.css';
