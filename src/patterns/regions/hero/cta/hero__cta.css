@@ -290,7 +290,7 @@
                     position: relative;
                     padding-bottom: var(--space-16);
                     margin-bottom: var(--space-16);
-
+                    
                     &:after {
                         width: 50px;
                         height: 2px;
@@ -301,7 +301,7 @@
                         left: 0;
                     }
                 }
-                margin-left: var(--space-16);
+                /* margin-left: var(--space-16); */
                 font-family: var(--clocktower-sans-serif);
                 color: #FFFFFF;
 
