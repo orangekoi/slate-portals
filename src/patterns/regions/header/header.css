@@ -68,7 +68,7 @@ header {
             /* height: 100px; */
     
 
-            a.site-name-link {
+            h1.site-name {
 
                 flex: 0 0 33%;
                 /* margin-left: 5px; */
@@ -80,7 +80,7 @@ header {
                 display: flex;
                 align-items: center;
 
-                h1 {
+                a.site-name-link {
                     font-size: var(--step-2);
                     font-family: var(--clocktower-serif);
                     font-weight: var(--regular-weight);

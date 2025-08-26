@@ -39,6 +39,7 @@ import './patterns/base/mixins.css';
 import './patterns/base/global.css';
 import './patterns/base/typography/typography.css';
 import './patterns/base/spacing/spacing.css';
+import './patterns/base/layout/slate_layout/slate_layout.css';
 import './patterns/base/layout/sections/sections.css';
 import './patterns/base/layout/grid/grid.css';
 import './patterns/base/layout/flex/flex.css';
