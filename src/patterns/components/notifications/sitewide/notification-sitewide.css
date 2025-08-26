@@ -16,6 +16,12 @@
         padding: var(--space-16) var(--space-32);
     }
 
+    &.high-contrast {
+        background: #c6ff00;
+        p {
+            color: #000;
+        }
+    }
 }
 
 .sitewide-notifcation-enabled { 

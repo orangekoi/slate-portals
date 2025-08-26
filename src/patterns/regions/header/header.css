@@ -1,7 +1,6 @@
 header {
 
     &#site-header {
-        background: blue;
         display: flex;
         flex-direction: column;
         margin: var(--space-0);
